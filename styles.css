@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(146deg, #6B90AB 0%, #F07D60 100%);
+    font-family: 'Poppins', sans-serif;
+    padding: 28px;
+    box-sizing: border-box;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 166px;
+    margin-top: 0px;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.testimonials-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 44px;
+    column-gap: 64px;
+    width: 592px;
+    height: 390px;
+    margin-left: 80px;
+    place-self: center;
+}
+
+.top {
+    grid-row: 1;
+}
+
+.middle {
+    grid-row: 3;
+}
+
+.bottom {
+    grid-row: 2;
+    transform: translateX(-80%);
+}
+
+.testimonial-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+}
+
+.testimonial-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    width: 488px;
+}
+
+.modal-image {
+    place-self: center;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-bottom: 24px;
+}
+
+.modal-content {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: left;
+    border-radius: 12px;
+    background: rgba(37, 37, 37, 0.75);
+    color: #F8F8F8;
+    padding: 27px 41px;
+}
+
+.modal-name {
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+}
+
+.modal-testimony {
+    margin-bottom: 20px;
+}
+
+.quote {
+    position: absolute;
+    top: -20%;
+    left: -40%;
+}
